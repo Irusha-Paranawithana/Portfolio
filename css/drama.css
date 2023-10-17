@@ -1,0 +1,68 @@
+@keyframes FadeIn{
+    from {opacity:0;
+        transform: rotateX(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../images/dramabg.jpg);
+    background-size: cover;
+    animation: FadeIn 0.75s;
+   
+   
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #fff;
+    font-size: 50px; /* Increase the font size for emphasis */
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: underline;
+    
+    
+   
+}
+h2{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-container {
+    flex: 1;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
