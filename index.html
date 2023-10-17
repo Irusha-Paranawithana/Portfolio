@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Loading....</title>
+      <link rel="stylesheet" href="css/loader.css">
+   </head>
+   <body>
+      <div class="center">
+         <div class="ring"></div>
+         <span>loading...</span>
+      </div>
+      
+      <script>
+        
+         let iterationCount = 0;
+         
+         function redirectAfterTwoIterations() {
+            iterationCount++;
+            if (iterationCount >= 2) {
+               window.location.href = "pages/Home.html";
+            } else {
+             
+               setTimeout(performNextIteration, 3000);
+            }
+         }
+
+         function performNextIteration() {
+            
+            document.querySelector('span').textContent = 'loading... Iteration ' + (iterationCount + 1);
+           
+
+           
+            redirectAfterTwoIterations();
+         }
+
+         window.addEventListener('load', redirectAfterTwoIterations);
+      </script>
+   </body>
+</html>
